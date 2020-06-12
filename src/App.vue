@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col sm="6" offset="3">
+          <SearchFlight/>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchFlight from './components/SearchFlight.vue'
 
 export default {
   name: 'App',
+  props:{
+
+  },
   components: {
-    HelloWorld
+    SearchFlight
+  },
+  mounted: function() {
+      
   }
 }
 </script>
